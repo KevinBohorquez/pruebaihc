@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  font-family: sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  min-height: 100dvh;
+  margin: auto;
+
+  background: #89A4DE;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cursos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #E6EEFF;
+    height: 90px;
+}
+
+.cursos h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+}
+
+.dashboard-footer{
+    background: #52328C;
+
+}
+
+.curso-container{
+  background-color: white;
+  height: 140px;
+  width: 85%;
+  border-radius: 16px;
+  margin-top: 30px;
+
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+}
