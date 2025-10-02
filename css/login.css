@@ -12,12 +12,10 @@ body {
   min-height: 100dvh;
   margin: auto;
 
-  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), 
-                    url("../assets/img/login-background.png");
+  background-image: url("../assets/img/login-background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
 }
 
 .navbar {
@@ -106,4 +104,10 @@ body {
   margin: 0;
   font-weight: 500;
   color: #3c4043;
+}
+
+.imagen-robot img{
+  height: 20vh;
+
+  margin: 20px;
 }
