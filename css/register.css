@@ -1,0 +1,53 @@
+.input-container{
+  background-color: #F3F3F3;
+  border-radius: 16px;
+  border-width: 10px;
+  border: 1px solid #BDBDBD;
+  height: 35px;
+  width: 80%;
+  margin: 5px;
+}
+
+.contenido .lbl-register{
+  font-family: 'Oxanium', sans-serif;  
+  font-size: 30px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.contenido .iniciar-sesion{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #619CE9;
+  border-radius: 16px;
+  border: 2px solid #5B94DE;
+  color: white;
+  margin: 18px;
+  height: 35px;
+  width: 80%;
+  text-decoration: none;
+}
+
+.contenido .input-container{
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  padding-left: 10px; 
+
+}
+
+.contenido .input-container input{
+  padding-left: 10px;
+  font-family: 'Oxanium', sans-serif;
+  outline: none;
+  color: #828282;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  background-color: #F3F3F3;
+}
+
+.contenido .input-container input::placeholder {
+  opacity: 0.5;
+}
