@@ -104,9 +104,9 @@ body {
 }
 
 .dashboard-footer img {
-  height: auto;
-  width: auto;
-  display: block;
+  max-width: 80%;   /* se adapta al ancho del contenedor */
+  max-height: 70%;  /* se adapta a la altura del contenedor */
+  object-fit: contain; /* mantiene proporciones */
 }
 
 .footer-class{
