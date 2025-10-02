@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oxanium:wght@400;600;700&family=Roboto:wght@400;700&display=swap');
+
 body {
   display: flex;
   flex-direction: column;
@@ -21,7 +23,7 @@ body {
     justify-content: center;
     align-items: center;
     background: #E6EEFF;
-    height: 90px;
+    height: 80px;
 }
 
 .cursos h1{
@@ -29,18 +31,24 @@ body {
   font-size: 26px;
 }
 
-.dashboard-footer{
-    background: #52328C;
-
-}
-
 .curso-container{
   background-color: white;
-  height: 180px;
+  height: 100%;
   width: 85%;
   border-radius: 16px;
   margin-top: 30px;
 
+}
+
+.curso-container h1{
+  font-family: 'Oxanium', sans-serif;
+  margin: 20px 10px 5px 20px;
+  line-height: 1;
+}
+
+.curso-container p{
+  font-family: 'Oxanium', sans-serif;
+  margin: 0px 50px 0 20px;
 }
 
 .main-container{
@@ -49,5 +57,71 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex: 1;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
+}
+
+.progreso{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Rambla', sans-serif;
+  margin-top: 10px;
+}
+
+.progreso p{
+  font-family: 'Rambla', sans-serif;
+  font-weight: 600;
+}
+
+.progress-bar {
+  width: 90%;
+  margin: 10px auto 15px auto; /* arriba 10px, auto en lados */
+  height: 20px;
+  background: #D7D7D7;
+  border-radius: 64px;
+  overflow: hidden;
+}
+
+.progress-bar-green {
+  height: 100%;
+  background: #68B268;
+  border-radius: 64px;
+}
+
+
+.dashboard-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #52328C;
+  color: white;
+  height: 80px;
+}
+
+.dashboard-footer img {
+  height: auto;
+  width: auto;
+  display: block;
+}
+
+.footer-class{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100%;
+}
+
+.footer-class-actual{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100%;
+  background-color: #1F064D;
 }
