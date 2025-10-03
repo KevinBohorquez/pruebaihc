@@ -79,7 +79,7 @@ body {
 
 .progress-bar {
   width: 90%;
-  margin: 10px auto 15px auto; /* arriba 10px, auto en lados */
+  margin: 10px auto 15px auto;
   height: 20px;
   background: #D7D7D7;
   border-radius: 64px;
@@ -107,9 +107,9 @@ body {
 }
 
 .dashboard-footer img {
-  max-width: 80%;   /* se adapta al ancho del contenedor */
-  max-height: 70%;  /* se adapta a la altura del contenedor */
-  object-fit: contain; /* mantiene proporciones */
+  max-width: 80%;
+  max-height: 70%; 
+  object-fit: contain;
 }
 
 .footer-class{

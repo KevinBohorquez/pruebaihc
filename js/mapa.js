@@ -32,8 +32,6 @@ const levelData = {
     25: { name: 'Lección 25', x: 50,  y: 1890 }
 };
 
-
-// Mostrar globo de texto
 function showSpeechBubble(level) {
     const data = levelData[level];
     bubbleTitle.textContent = data.name;
@@ -42,7 +40,6 @@ function showSpeechBubble(level) {
     speechBubble.classList.add('active');
 }
 
-// Click en niveles
 levels.forEach(level => {
     level.addEventListener('click', function() {
         if (this.classList.contains('locked')) {
@@ -52,17 +49,22 @@ levels.forEach(level => {
         const levelNum = parseInt(this.dataset.level);
         currentLevel = levelNum;
         
-        // Actualizar clases
-        levels.forEach(l => l.classList.remove('current'));
-        this.classList.add('current');
+        levels.forEach(l => {
+            if (l.classList.contains('unlocked') || l.classList.contains('current')) {
+                l.classList.remove('current');
+                l.classList.add('unlocked');
+            }
+        });
         
-        // Mostrar globo
+        this.classList.remove('unlocked');
+        this.classList.add('current');
+
         showSpeechBubble(levelNum);
     });
 });
 
 function startLevel() {
-    alert(`¡Iniciando nivel ${currentLevel}!`);
+    alert(`¡Iniciando leccion: ${currentLevel}!`);
     // Aquí puedes redirigir a la página del nivel
     // window.location.href = `nivel${currentLevel}.html`;
 }
