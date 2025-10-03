@@ -136,8 +136,9 @@ levels.forEach(level => {
 
 function startLevel() {
     alert(`¡Iniciando leccion: ${currentLevel}!`);
-    // Aquí puedes redirigir a la página del nivel
-    // window.location.href = `nivel${currentLevel}.html`;
+    if(currentPage === 'tiposdedatos.html' && currentLevel === 5){
+        window.location.href = "tipodedatos-teoria.html";
+    }
 }
 
 showSpeechBubble(currentLevel);
