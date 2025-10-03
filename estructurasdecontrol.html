@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructuras de control</title>
+    <link rel="stylesheet" href="css/niveles.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=K2D:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="inner-navbar">
+            <a href="cursos.html" class="navbar-title">
+                <img src="assets/img/hamburguer-menu.png" alt="Cursos">
+                <p>Estructuras de control</p>
+            </a>
+        </div>
+    </header>
+    <div class="map-container">
+        <div class="robots" style="position: absolute; left: 30px; top: 240px;">
+            <img src="assets/img/robot-3.png" alt="Cursos">
+        </div>
+        <div class="robots" style="position: absolute; left: 30px; top: 1440px;">
+            <img src="assets/img/robot-4.png" alt="Cursos">
+        </div>
+        <div class="robots" style="position: absolute; left: 30px; top: 850px;">
+            <img src="assets/img/robot-5.png" alt="Cursos">
+        </div>
+        <div class="robots" style="position: absolute; left: 200px; top: 520px;">
+            <img src="assets/img/robot-6.png" alt="Cursos">
+        </div>
+        <div class="robots" style="position: absolute; left: 200px; top: 1150px;">
+            <img src="assets/img/robot-7.png" alt="Cursos">
+        </div>
+        <div class="robots" style="position: absolute; left: 200px; top: 1700px;">
+            <img src="assets/img/robot-8.png" alt="Cursos">
+        </div>
+
+        <div class="speech-bubble" id="speechBubble">
+            <div class="bubble-title" id="bubbleTitle">Lección 0 - Bubble Sort</div>
+            <button class="bubble-btn" onclick="startLevel()">Comenzar</button>
+        </div>
+        <div class="level unlocked" data-level="1" style="left: 50px; top: 90px;">
+            <span class="level-number">1</span>
+        </div>
+        <div class="level unlocked" data-level="2" style="left: 140px; top: 150px;">
+            <span class="level-number">2</span>
+        </div>
+        <div class="level unlocked" data-level="3" style="left: 230px; top: 210px;">
+            <span class="level-number">3</span>
+        </div>
+
+        <div class="level unlocked" data-level="4" style="left: 190px; top: 300px;">
+            <span class="level-number">4</span>
+        </div>
+        <div class="level unlocked" data-level="5" style="left: 230px; top: 390px;">
+            <span class="level-number">5</span>
+        </div>
+        <div class="level unlocked" data-level="6" style="left: 140px; top: 450px;">
+            <span class="level-number">6</span>
+        </div>
+
+        <div class="level unlocked" data-level="7" style="left: 50px; top: 510px;">
+            <span class="level-number">7</span>
+        </div>
+        <div class="level current" data-level="8" style="left: 90px; top: 600px;">
+            <span class="level-number">8</span>
+        </div>
+        <div class="level locked" data-level="9" style="left: 50px; top: 690px;">
+            <span class="level-number">9</span>
+        </div>
+
+        <div class="level locked" data-level="10" style="left: 140px; top: 750px;">
+            <span class="level-number">10</span>
+        </div>
+        <div class="level locked" data-level="11" style="left: 230px; top: 810px;">
+            <span class="level-number">11</span>
+        </div>
+            <div class="level locked" data-level="12" style="left: 190px; top: 900px;">
+        <span class="level-number">12</span>
+        </div>
+
+        <div class="level locked" data-level="13" style="left: 230px; top: 990px;">
+            <span class="level-number">13</span>
+        </div>
+        <div class="level locked" data-level="14" style="left: 140px; top: 1050px;">
+            <span class="level-number">14</span>
+        </div>
+        <div class="level locked" data-level="15" style="left: 50px; top: 1110px;">
+            <span class="level-number">15</span>
+        </div>
+
+        <div class="level locked" data-level="16" style="left: 90px; top: 1200px;">
+            <span class="level-number">16</span>
+        </div>
+        <div class="level locked" data-level="17" style="left: 50px; top: 1290px;">
+            <span class="level-number">17</span>
+        </div>
+        <div class="level locked" data-level="18" style="left: 140px; top: 1350px;">
+            <span class="level-number">18</span>
+        </div>
+
+        <div class="level locked" data-level="19" style="left: 230px; top: 1410px;">
+            <span class="level-number">19</span>
+        </div>
+        <div class="level locked" data-level="20" style="left: 190px; top: 1500px;">
+            <span class="level-number">20</span>
+        </div>
+        <div class="level locked" data-level="21" style="left: 230px; top: 1590px;">
+            <span class="level-number">21</span>
+        </div>
+
+        <div class="level locked" data-level="22" style="left: 140px; top: 1650px;">
+            <span class="level-number">22</span>
+        </div>
+        <div class="level locked" data-level="23" style="left: 50px; top: 1710px;">
+            <span class="level-number">23</span>
+        </div>
+        <div class="level locked" data-level="24" style="left: 90px; top: 1800px;">
+            <span class="level-number">24</span>
+        </div>
+        <div class="level locked" data-level="25" style="left: 50px; top: 1890px;">
+            <span class="level-number">25</span>
+        </div>
+
+    </div>
+
+    <footer class="dashboard-footer">
+        <div class="footer-class-actual">
+        <img src="assets/img/footer-aprende.png" class="ilustracion">
+        </div>
+        <div class="footer-class">
+        <img src="assets/img/footer-logros.png" class="ilustracion">
+        </div>
+        <div class="footer-class">
+        <img src="assets/img/footer-perfil.png" class="ilustracion">
+        </div>
+    </footer>
+    <script src="js/mapa.js"></script>
+</body>
+</html>
