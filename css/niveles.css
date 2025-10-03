@@ -20,6 +20,7 @@ body {
     width: 100%;
     padding: 20px;
     min-height: 2080px;
+    overflow: hidden;
 }
 
 .level {
