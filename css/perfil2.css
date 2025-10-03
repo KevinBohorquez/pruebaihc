@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Oxanium', sans-serif;
+  background: linear-gradient(to bottom, #B0ADFF 0%, #CCFAFF 100%);
+  color: #0E0220;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-bottom: 100px;
+}
+
+.profile-picture {
+  margin-bottom: 20px;
+}
+
+.profile-picture img {
+  width: 150px;
+  height: auto;
+}
+
+.user-name {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+
+.info-card {
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 90%;
+  max-width: 400px;
+  border-radius: 16px;
+  padding: 25px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.info-section {
+  margin-bottom: 20px;
+}
+
+.info-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.info-content {
+  font-size: 16px;
+  margin: 5px 0 0 0;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.btn-primary {
+  background-color: #FFFFFF;
+  color: #333;
+  border: 1px solid #DDD;
+}
+
+.google-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+/* --- COLOR DEL BOTÓN "CERRAR SESIÓN" MÁS SUAVE --- */
+.btn-secondary {
+  background-color: #985afd; /* Tono de morado más claro */
+  color: #FFFFFF;
+  border: none;
+}
+/* ------------------------------------------------ */
+
+
+/* Estilos del footer unificados */
+.dashboard-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #52328C;
+  color: white;
+  height: 80px;
+  z-index: 1000;
+}
+
+.dashboard-footer img {
+  max-width: 80%;
+  max-height: 70%;
+  object-fit: contain;
+}
+
+.footer-class, a.footer-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100%;
+  text-decoration: none;
+}
+
+.footer-class-actual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100%;
+  background-color: #1F064D;
+}
